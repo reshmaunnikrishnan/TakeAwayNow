@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B73BCDCECDE7292A405B1B2 /* Pods_TakeAwayNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFABD20F3463FA302E15C6F /* Pods_TakeAwayNow.framework */; };
+		B2E54C02B37DBC758440C8A2 /* Pods_TakeAwayNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C6D7B29FD94AF5428E275 /* Pods_TakeAwayNowTests.framework */; };
+		F72AB4F023C907E4009EC21F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB4EF23C907E4009EC21F /* AppDelegate.swift */; };
+		F72AB4F223C907E4009EC21F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB4F123C907E4009EC21F /* SceneDelegate.swift */; };
+		F72AB4F423C907E4009EC21F /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB4F323C907E4009EC21F /* RestaurantsViewController.swift */; };
+		F72AB4F723C907E4009EC21F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72AB4F523C907E4009EC21F /* Main.storyboard */; };
+		F72AB4F923C907E5009EC21F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72AB4F823C907E5009EC21F /* Assets.xcassets */; };
+		F72AB4FC23C907E5009EC21F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72AB4FA23C907E5009EC21F /* LaunchScreen.storyboard */; };
+		F72AB50723C907E5009EC21F /* TakeAwayNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB50623C907E5009EC21F /* TakeAwayNowTests.swift */; };
+		F72AB51323C90920009EC21F /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = F72AB51223C90920009EC21F /* restaurants.json */; };
+		F72AB51523C90F66009EC21F /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB51423C90F66009EC21F /* RestaurantsViewModel.swift */; };
+		F72AB51823C9101E009EC21F /* LocalFileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB51723C9101E009EC21F /* LocalFileAPI.swift */; };
+		F72AB51B23C910AE009EC21F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB51A23C910AE009EC21F /* Restaurant.swift */; };
+		F72AB51D23C91BB2009EC21F /* TakeAwayNowAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB51C23C91BB2009EC21F /* TakeAwayNowAPI.swift */; };
+		F72AB52023C9296C009EC21F /* ObservableType+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AB51F23C9296C009EC21F /* ObservableType+extension.swift */; };
+		F76DAED223CE416B0076295C /* StorageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAED123CE416B0076295C /* StorageAPI.swift */; };
+		F76DAED523CE55A60076295C /* StorageAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAED423CE55A60076295C /* StorageAPITests.swift */; };
+		F76DAED823CE644F0076295C /* ObservableType+extensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAED723CE644F0076295C /* ObservableType+extensionTests.swift */; };
+		F76DAEDD23CE7CB60076295C /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAEDC23CE7CB60076295C /* RestaurantViewModel.swift */; };
+		F76DAEDF23CE7D440076295C /* SortableRestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAEDE23CE7D440076295C /* SortableRestaurantsViewModel.swift */; };
+		F76DAEE123CE80B70076295C /* RestaurantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAEE023CE80B70076295C /* RestaurantViewModelTests.swift */; };
+		F76DAEE323CE90E60076295C /* RestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAEE223CE90E60076295C /* RestaurantsViewModelTests.swift */; };
+		F76DAEE523CF3E680076295C /* SortableRestaurantsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAEE423CF3E680076295C /* SortableRestaurantsViewModelTests.swift */; };
+		F76DAEE723CF525A0076295C /* SortOptionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76DAEE623CF525A0076295C /* SortOptionsViewModelTests.swift */; };
+		F76DAEEA23CF592E0076295C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F76DAEE923CF592E0076295C /* .gitignore */; };
+		F7C35A9D23CB7DF000F1EF83 /* SortOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C35A9C23CB7DF000F1EF83 /* SortOptionsViewModel.swift */; };
+		F7C35A9F23CB7EB600F1EF83 /* SortOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C35A9E23CB7EB600F1EF83 /* SortOptionsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F72AB50323C907E5009EC21F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72AB4E423C907E4009EC21F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72AB4EB23C907E4009EC21F;
+			remoteInfo = TakeAwayNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091C6D7B29FD94AF5428E275 /* Pods_TakeAwayNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeAwayNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379807B862FE12F21DFCBA26 /* Pods-TakeAwayNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeAwayNow.debug.xcconfig"; path = "Target Support Files/Pods-TakeAwayNow/Pods-TakeAwayNow.debug.xcconfig"; sourceTree = "<group>"; };
+		58313679ECF41B501BFE5AA1 /* Pods-TakeAwayNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeAwayNowTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeAwayNowTests/Pods-TakeAwayNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6791E9AB615B3C87A37FFC62 /* Pods-TakeAwayNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeAwayNowTests.release.xcconfig"; path = "Target Support Files/Pods-TakeAwayNowTests/Pods-TakeAwayNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CFABD20F3463FA302E15C6F /* Pods_TakeAwayNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeAwayNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB749160413E3FA946CC1DF /* Pods-TakeAwayNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeAwayNow.release.xcconfig"; path = "Target Support Files/Pods-TakeAwayNow/Pods-TakeAwayNow.release.xcconfig"; sourceTree = "<group>"; };
+		F72AB4EC23C907E4009EC21F /* TakeAwayNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeAwayNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72AB4EF23C907E4009EC21F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F72AB4F123C907E4009EC21F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F72AB4F323C907E4009EC21F /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		F72AB4F623C907E4009EC21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F72AB4F823C907E5009EC21F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F72AB4FB23C907E5009EC21F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F72AB4FD23C907E5009EC21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72AB50223C907E5009EC21F /* TakeAwayNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeAwayNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72AB50623C907E5009EC21F /* TakeAwayNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAwayNowTests.swift; sourceTree = "<group>"; };
+		F72AB50823C907E5009EC21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72AB51223C90920009EC21F /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		F72AB51423C90F66009EC21F /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
+		F72AB51723C9101E009EC21F /* LocalFileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileAPI.swift; sourceTree = "<group>"; };
+		F72AB51A23C910AE009EC21F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		F72AB51C23C91BB2009EC21F /* TakeAwayNowAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAwayNowAPI.swift; sourceTree = "<group>"; };
+		F72AB51F23C9296C009EC21F /* ObservableType+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+extension.swift"; sourceTree = "<group>"; };
+		F76DAED123CE416B0076295C /* StorageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAPI.swift; sourceTree = "<group>"; };
+		F76DAED423CE55A60076295C /* StorageAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAPITests.swift; sourceTree = "<group>"; };
+		F76DAED723CE644F0076295C /* ObservableType+extensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+extensionTests.swift"; sourceTree = "<group>"; };
+		F76DAEDC23CE7CB60076295C /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		F76DAEDE23CE7D440076295C /* SortableRestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableRestaurantsViewModel.swift; sourceTree = "<group>"; };
+		F76DAEE023CE80B70076295C /* RestaurantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModelTests.swift; sourceTree = "<group>"; };
+		F76DAEE223CE90E60076295C /* RestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModelTests.swift; sourceTree = "<group>"; };
+		F76DAEE423CF3E680076295C /* SortableRestaurantsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableRestaurantsViewModelTests.swift; sourceTree = "<group>"; };
+		F76DAEE623CF525A0076295C /* SortOptionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsViewModelTests.swift; sourceTree = "<group>"; };
+		F76DAEE823CF55530076295C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F76DAEE923CF592E0076295C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F7C35A9C23CB7DF000F1EF83 /* SortOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsViewModel.swift; sourceTree = "<group>"; };
+		F7C35A9E23CB7EB600F1EF83 /* SortOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortOptionsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F72AB4E923C907E4009EC21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B73BCDCECDE7292A405B1B2 /* Pods_TakeAwayNow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72AB4FF23C907E5009EC21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E54C02B37DBC758440C8A2 /* Pods_TakeAwayNowTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		291DD17E1505B174D307B1BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CFABD20F3463FA302E15C6F /* Pods_TakeAwayNow.framework */,
+				091C6D7B29FD94AF5428E275 /* Pods_TakeAwayNowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A409AD9857DB729C09079CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				379807B862FE12F21DFCBA26 /* Pods-TakeAwayNow.debug.xcconfig */,
+				BBB749160413E3FA946CC1DF /* Pods-TakeAwayNow.release.xcconfig */,
+				58313679ECF41B501BFE5AA1 /* Pods-TakeAwayNowTests.debug.xcconfig */,
+				6791E9AB615B3C87A37FFC62 /* Pods-TakeAwayNowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F72AB4E323C907E4009EC21F = {
+			isa = PBXGroup;
+			children = (
+				F76DAEE923CF592E0076295C /* .gitignore */,
+				F76DAEE823CF55530076295C /* README.md */,
+				F72AB4EE23C907E4009EC21F /* TakeAwayNow */,
+				F72AB50523C907E5009EC21F /* TakeAwayNowTests */,
+				F72AB4ED23C907E4009EC21F /* Products */,
+				7A409AD9857DB729C09079CB /* Pods */,
+				291DD17E1505B174D307B1BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F72AB4ED23C907E4009EC21F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F72AB4EC23C907E4009EC21F /* TakeAwayNow.app */,
+				F72AB50223C907E5009EC21F /* TakeAwayNowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F72AB4EE23C907E4009EC21F /* TakeAwayNow */ = {
+			isa = PBXGroup;
+			children = (
+				F72AB51223C90920009EC21F /* restaurants.json */,
+				F72AB4FD23C907E5009EC21F /* Info.plist */,
+				F72AB4EF23C907E4009EC21F /* AppDelegate.swift */,
+				F72AB4F123C907E4009EC21F /* SceneDelegate.swift */,
+				F72AB4F823C907E5009EC21F /* Assets.xcassets */,
+				F76DAED023CE41110076295C /* Caching */,
+				F72AB51E23C9294F009EC21F /* Extensions */,
+				F72AB4FA23C907E5009EC21F /* LaunchScreen.storyboard */,
+				F72AB4F523C907E4009EC21F /* Main.storyboard */,
+				F72AB51923C91099009EC21F /* Model */,
+				F72AB51623C90FCB009EC21F /* Networking */,
+				F72AB51123C908B0009EC21F /* Scenes */,
+			);
+			path = TakeAwayNow;
+			sourceTree = "<group>";
+		};
+		F72AB50523C907E5009EC21F /* TakeAwayNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				F76DAED623CE64220076295C /* Extensions */,
+				F76DAED323CE556B0076295C /* Caching */,
+				F76DAED923CE708B0076295C /* Scenes */,
+				F72AB50623C907E5009EC21F /* TakeAwayNowTests.swift */,
+				F72AB50823C907E5009EC21F /* Info.plist */,
+			);
+			path = TakeAwayNowTests;
+			sourceTree = "<group>";
+		};
+		F72AB51123C908B0009EC21F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F72AB4F323C907E4009EC21F /* RestaurantsViewController.swift */,
+				F72AB51423C90F66009EC21F /* RestaurantsViewModel.swift */,
+				F76DAEDC23CE7CB60076295C /* RestaurantViewModel.swift */,
+				F76DAEDE23CE7D440076295C /* SortableRestaurantsViewModel.swift */,
+				F7C35A9E23CB7EB600F1EF83 /* SortOptionsViewController.swift */,
+				F7C35A9C23CB7DF000F1EF83 /* SortOptionsViewModel.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F72AB51623C90FCB009EC21F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F72AB51723C9101E009EC21F /* LocalFileAPI.swift */,
+				F72AB51C23C91BB2009EC21F /* TakeAwayNowAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F72AB51923C91099009EC21F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F72AB51A23C910AE009EC21F /* Restaurant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F72AB51E23C9294F009EC21F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F72AB51F23C9296C009EC21F /* ObservableType+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F76DAED023CE41110076295C /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				F76DAED123CE416B0076295C /* StorageAPI.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		F76DAED323CE556B0076295C /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				F76DAED423CE55A60076295C /* StorageAPITests.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		F76DAED623CE64220076295C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F76DAED723CE644F0076295C /* ObservableType+extensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F76DAED923CE708B0076295C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F76DAEE023CE80B70076295C /* RestaurantViewModelTests.swift */,
+				F76DAEE223CE90E60076295C /* RestaurantsViewModelTests.swift */,
+				F76DAEE423CF3E680076295C /* SortableRestaurantsViewModelTests.swift */,
+				F76DAEE623CF525A0076295C /* SortOptionsViewModelTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F72AB4EB23C907E4009EC21F /* TakeAwayNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72AB50B23C907E5009EC21F /* Build configuration list for PBXNativeTarget "TakeAwayNow" */;
+			buildPhases = (
+				E7D34187AD1EF840C429C884 /* [CP] Check Pods Manifest.lock */,
+				F72AB4E823C907E4009EC21F /* Sources */,
+				F72AB4E923C907E4009EC21F /* Frameworks */,
+				F72AB4EA23C907E4009EC21F /* Resources */,
+				BDB1B701CC573DB8A48220BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeAwayNow;
+			productName = TakeAwayNow;
+			productReference = F72AB4EC23C907E4009EC21F /* TakeAwayNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F72AB50123C907E5009EC21F /* TakeAwayNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72AB50E23C907E5009EC21F /* Build configuration list for PBXNativeTarget "TakeAwayNowTests" */;
+			buildPhases = (
+				F7A5C2131B4C62BA2B4ABCDD /* [CP] Check Pods Manifest.lock */,
+				F72AB4FE23C907E5009EC21F /* Sources */,
+				F72AB4FF23C907E5009EC21F /* Frameworks */,
+				F72AB50023C907E5009EC21F /* Resources */,
+				076A7E7EB165103A6E25E2DB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72AB50423C907E5009EC21F /* PBXTargetDependency */,
+			);
+			name = TakeAwayNowTests;
+			productName = TakeAwayNowTests;
+			productReference = F72AB50223C907E5009EC21F /* TakeAwayNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F72AB4E423C907E4009EC21F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = ruvlmoon;
+				TargetAttributes = {
+					F72AB4EB23C907E4009EC21F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					F72AB50123C907E5009EC21F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = F72AB4EB23C907E4009EC21F;
+					};
+				};
+			};
+			buildConfigurationList = F72AB4E723C907E4009EC21F /* Build configuration list for PBXProject "TakeAwayNow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F72AB4E323C907E4009EC21F;
+			productRefGroup = F72AB4ED23C907E4009EC21F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F72AB4EB23C907E4009EC21F /* TakeAwayNow */,
+				F72AB50123C907E5009EC21F /* TakeAwayNowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F72AB4EA23C907E4009EC21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DAEEA23CF592E0076295C /* .gitignore in Resources */,
+				F72AB4FC23C907E5009EC21F /* LaunchScreen.storyboard in Resources */,
+				F72AB51323C90920009EC21F /* restaurants.json in Resources */,
+				F72AB4F923C907E5009EC21F /* Assets.xcassets in Resources */,
+				F72AB4F723C907E4009EC21F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72AB50023C907E5009EC21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		076A7E7EB165103A6E25E2DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeAwayNowTests/Pods-TakeAwayNowTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeAwayNowTests/Pods-TakeAwayNowTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeAwayNowTests/Pods-TakeAwayNowTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB1B701CC573DB8A48220BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeAwayNow/Pods-TakeAwayNow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeAwayNow/Pods-TakeAwayNow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeAwayNow/Pods-TakeAwayNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D34187AD1EF840C429C884 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeAwayNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A5C2131B4C62BA2B4ABCDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeAwayNowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F72AB4E823C907E4009EC21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72AB52023C9296C009EC21F /* ObservableType+extension.swift in Sources */,
+				F76DAEDD23CE7CB60076295C /* RestaurantViewModel.swift in Sources */,
+				F72AB51D23C91BB2009EC21F /* TakeAwayNowAPI.swift in Sources */,
+				F72AB4F423C907E4009EC21F /* RestaurantsViewController.swift in Sources */,
+				F76DAEDF23CE7D440076295C /* SortableRestaurantsViewModel.swift in Sources */,
+				F72AB51523C90F66009EC21F /* RestaurantsViewModel.swift in Sources */,
+				F7C35A9D23CB7DF000F1EF83 /* SortOptionsViewModel.swift in Sources */,
+				F76DAED223CE416B0076295C /* StorageAPI.swift in Sources */,
+				F72AB51B23C910AE009EC21F /* Restaurant.swift in Sources */,
+				F72AB51823C9101E009EC21F /* LocalFileAPI.swift in Sources */,
+				F7C35A9F23CB7EB600F1EF83 /* SortOptionsViewController.swift in Sources */,
+				F72AB4F023C907E4009EC21F /* AppDelegate.swift in Sources */,
+				F72AB4F223C907E4009EC21F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72AB4FE23C907E5009EC21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76DAED523CE55A60076295C /* StorageAPITests.swift in Sources */,
+				F76DAEE123CE80B70076295C /* RestaurantViewModelTests.swift in Sources */,
+				F76DAEE323CE90E60076295C /* RestaurantsViewModelTests.swift in Sources */,
+				F72AB50723C907E5009EC21F /* TakeAwayNowTests.swift in Sources */,
+				F76DAEE723CF525A0076295C /* SortOptionsViewModelTests.swift in Sources */,
+				F76DAED823CE644F0076295C /* ObservableType+extensionTests.swift in Sources */,
+				F76DAEE523CF3E680076295C /* SortableRestaurantsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F72AB50423C907E5009EC21F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F72AB4EB23C907E4009EC21F /* TakeAwayNow */;
+			targetProxy = F72AB50323C907E5009EC21F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F72AB4F523C907E4009EC21F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72AB4F623C907E4009EC21F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F72AB4FA23C907E5009EC21F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72AB4FB23C907E5009EC21F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F72AB50923C907E5009EC21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F72AB50A23C907E5009EC21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F72AB50C23C907E5009EC21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 379807B862FE12F21DFCBA26 /* Pods-TakeAwayNow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				INFOPLIST_FILE = TakeAwayNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.TakeAwayNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F72AB50D23C907E5009EC21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBB749160413E3FA946CC1DF /* Pods-TakeAwayNow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				INFOPLIST_FILE = TakeAwayNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.TakeAwayNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F72AB50F23C907E5009EC21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58313679ECF41B501BFE5AA1 /* Pods-TakeAwayNowTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				INFOPLIST_FILE = TakeAwayNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.TakeAwayNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeAwayNow.app/TakeAwayNow";
+			};
+			name = Debug;
+		};
+		F72AB51023C907E5009EC21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6791E9AB615B3C87A37FFC62 /* Pods-TakeAwayNowTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 782478PCZS;
+				INFOPLIST_FILE = TakeAwayNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ruvlmoon.com.org.TakeAwayNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TakeAwayNow.app/TakeAwayNow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F72AB4E723C907E4009EC21F /* Build configuration list for PBXProject "TakeAwayNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72AB50923C907E5009EC21F /* Debug */,
+				F72AB50A23C907E5009EC21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72AB50B23C907E5009EC21F /* Build configuration list for PBXNativeTarget "TakeAwayNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72AB50C23C907E5009EC21F /* Debug */,
+				F72AB50D23C907E5009EC21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72AB50E23C907E5009EC21F /* Build configuration list for PBXNativeTarget "TakeAwayNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72AB50F23C907E5009EC21F /* Debug */,
+				F72AB51023C907E5009EC21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F72AB4E423C907E4009EC21F /* Project object */;
+}

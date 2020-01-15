@@ -1,0 +1,6 @@
+framework module Pods_TakeAwayNowTests {
+  umbrella header "Pods-TakeAwayNowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
