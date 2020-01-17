@@ -91,6 +91,7 @@ class RestaurantsViewController: UIViewController, UITableViewDelegate {
         self?.updateSortLabel(title: task.sortType)
         
         sortVC.dismiss(animated: true, completion: nil)
+        self?.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
       }).disposed(by: self.disposeBag)
         
       self.present(sortVC, animated: true, completion: nil)
